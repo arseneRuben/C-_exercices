@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32407.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello World", "Hello World\Hello World.csproj", "{C28B32B3-5C39-40D2-B89F-0A5A9CC809F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exemples Kahoot", "exemples Kahoot\exemples Kahoot.csproj", "{9C68148B-014B-44E9-969A-5094D5BAC1B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cours", "Cours", "{D7A127BA-0BE6-4F62-B63D-43F8C75CCAC1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kahoot", "Kahoot", "{C62DBF2F-6037-496D-9E2A-0293A913B3ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercices", "Exercices", "{E5E955B2-ABC8-4B88-8FB1-A89104EAE144}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapitre 02 - Les bases", "Chapitre 02 - Les bases", "{525397C5-4D53-450E-8D1B-BC46A687A3CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapitre 01 - Introduction", "Chapitre 01 - Introduction", "{0D3D875B-86D8-4F23-AF02-5FFF1DCD7AB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C28B32B3-5C39-40D2-B89F-0A5A9CC809F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C28B32B3-5C39-40D2-B89F-0A5A9CC809F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C28B32B3-5C39-40D2-B89F-0A5A9CC809F3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C28B32B3-5C39-40D2-B89F-0A5A9CC809F3}.Debug|x64.Build.0 = Debug|Any CPU
+		{C28B32B3-5C39-40D2-B89F-0A5A9CC809F3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C28B32B3-5C39-40D2-B89F-0A5A9CC809F3}.Debug|x86.Build.0 = Debug|Any CPU
+		{C28B32B3-5C39-40D2-B89F-0A5A9CC809F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C28B32B3-5C39-40D2-B89F-0A5A9CC809F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C28B32B3-5C39-40D2-B89F-0A5A9CC809F3}.Release|x64.ActiveCfg = Release|Any CPU
+		{C28B32B3-5C39-40D2-B89F-0A5A9CC809F3}.Release|x64.Build.0 = Release|Any CPU
+		{C28B32B3-5C39-40D2-B89F-0A5A9CC809F3}.Release|x86.ActiveCfg = Release|Any CPU
+		{C28B32B3-5C39-40D2-B89F-0A5A9CC809F3}.Release|x86.Build.0 = Release|Any CPU
+		{9C68148B-014B-44E9-969A-5094D5BAC1B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C68148B-014B-44E9-969A-5094D5BAC1B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C68148B-014B-44E9-969A-5094D5BAC1B5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9C68148B-014B-44E9-969A-5094D5BAC1B5}.Debug|x64.Build.0 = Debug|Any CPU
+		{9C68148B-014B-44E9-969A-5094D5BAC1B5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9C68148B-014B-44E9-969A-5094D5BAC1B5}.Debug|x86.Build.0 = Debug|Any CPU
+		{9C68148B-014B-44E9-969A-5094D5BAC1B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C68148B-014B-44E9-969A-5094D5BAC1B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C68148B-014B-44E9-969A-5094D5BAC1B5}.Release|x64.ActiveCfg = Release|Any CPU
+		{9C68148B-014B-44E9-969A-5094D5BAC1B5}.Release|x64.Build.0 = Release|Any CPU
+		{9C68148B-014B-44E9-969A-5094D5BAC1B5}.Release|x86.ActiveCfg = Release|Any CPU
+		{9C68148B-014B-44E9-969A-5094D5BAC1B5}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C28B32B3-5C39-40D2-B89F-0A5A9CC809F3} = {0D3D875B-86D8-4F23-AF02-5FFF1DCD7AB8}
+		{9C68148B-014B-44E9-969A-5094D5BAC1B5} = {525397C5-4D53-450E-8D1B-BC46A687A3CA}
+		{525397C5-4D53-450E-8D1B-BC46A687A3CA} = {C62DBF2F-6037-496D-9E2A-0293A913B3ED}
+		{0D3D875B-86D8-4F23-AF02-5FFF1DCD7AB8} = {D7A127BA-0BE6-4F62-B63D-43F8C75CCAC1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F24BA984-A39A-4A0F-B783-DA69DFC3A671}
+	EndGlobalSection
+EndGlobal
