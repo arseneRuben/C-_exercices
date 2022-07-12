@@ -19,9 +19,12 @@ namespace _05___kahoot {
 
 
     class Program {
-        static void Main(string[] args) {
-            Test t = new Test();
+        static void F(in int n) {
             
+        }
+        static void Main(string[] args) {
+            int a = 13;
+            Program.F(in a);
         }
     }
 }
