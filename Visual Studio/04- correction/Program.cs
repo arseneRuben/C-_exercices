@@ -66,7 +66,38 @@ namespace _04__correction {
             Console.WriteLine("seconde version : {0}", indice);
         }
     }
-    class Question6 { }
+    class Question6 {
+        static void MinMaxArray(float[] tab,
+            out float? min, out float? max) {
+
+            min = float.MaxValue;
+            max = float.MinValue;
+            
+            if (tab == null || tab.Length == 0) {
+                min = null;
+                max = null;
+                return;
+            }
+
+
+            foreach (float v in tab) {
+                if (v < min) {
+                    min = v;
+                }
+                if (v > max) {
+                    max = v;
+                }
+            }
+        }
+        protected internal static void Test() {
+            float? min, max;
+
+            //float[] tab = null;
+            float[] tab = new float[0];
+            Question6.MinMaxArray(tab, out min, out max);
+
+        }
+    }
     class Question7 { }
     class Question8 { }
 
@@ -74,7 +105,8 @@ namespace _04__correction {
     class Program {
         static void Main(string[] args) {
             //Question1.Test();
-            Question5.Test();
+            //Question5.Test();
+            Question6.Test();
 
             Console.WriteLine("Fini");
             Console.ReadLine();
