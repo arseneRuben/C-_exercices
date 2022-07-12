@@ -32,7 +32,40 @@ namespace _04__correction {
     class Question2 { }
     class Question3 { }
     class Question4 { }
-    class Question5 { }
+    class Question5 {
+        static int LePlusGrand(int[] tab) {
+            int indicePlusGrand = 0;
+
+            for (int i = 0; i < tab.Length; i++) {
+                if (tab[i] > tab[indicePlusGrand]) {
+                    indicePlusGrand = i;
+                }
+            }
+
+            return indicePlusGrand;
+        }
+
+        static int LePlusGrand(int[] tab, int nbElts) {
+            int indicePlusGrand = 0;
+
+            for (int i = 0; i < nbElts; i++) {
+                if (tab[i] > tab[indicePlusGrand]) {
+                    indicePlusGrand = i;
+                }
+            }
+
+            return indicePlusGrand;
+        }
+
+        public static void Test() {
+            int[] tab = { 45, 5, 49, 46, 325, 12, 90
+            };
+            int indice = Question5.LePlusGrand(tab);
+            Console.WriteLine("premiere version : {0}", indice);
+            indice = Question5.LePlusGrand(tab, 4);
+            Console.WriteLine("seconde version : {0}", indice);
+        }
+    }
     class Question6 { }
     class Question7 { }
     class Question8 { }
@@ -40,7 +73,8 @@ namespace _04__correction {
 
     class Program {
         static void Main(string[] args) {
-            Question1.Test();
+            //Question1.Test();
+            Question5.Test();
 
             Console.WriteLine("Fini");
             Console.ReadLine();
