@@ -57,6 +57,14 @@ namespace _04__correction {
             return indicePlusGrand;
         }
 
+        static void Trier(int[] tab) {
+            for(int i = tab.Length - 1; i>0; i--) {
+                int indiceMax = LePlusGrand(tab, i + 1);
+                //   echanger les elements aux indices indiceMax et i+1
+                //  a faire
+            }
+        }
+
         public static void Test() {
             int[] tab = { 45, 5, 49, 46, 325, 12, 90
             };
