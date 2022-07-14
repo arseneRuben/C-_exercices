@@ -18,6 +18,11 @@ namespace _05___exemple {
             Program p = new Program();
             //p.DoB = DateTime.Now;
             Console.WriteLine( p.DoB);
+
+            DateTime now = new DateTime();
+            //now = null;
+
+
         }
     }
 }
