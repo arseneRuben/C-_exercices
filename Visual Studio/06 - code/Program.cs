@@ -5,24 +5,41 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace _06___code {
-    abstract class Object {
-        public abstract void F();
-    }
-    class Program : Object {
-        public override void F() {
-
-        }
-
-        static void G() {
-
-        }
-        static void Main(string[] args) {
-
-            Object p = new Program();
-            p.F();
-            Program.G();
-
-
+    class Personne {
+        public virtual void SayHi() {
+            Console.WriteLine("Personne dit bonjour");
         }
     }
+    class Etudiant : Personne {
+        override public void SayHi() {
+            Console.WriteLine("Etudiant dit bonjour");
+        }
+
+        public override string ToString() {
+            return "Je suis un etudiant";
+        }
+    }
+
+    class Program {
+
+        private String nom;
+        public string Nom {
+            get { return nom; }
+            set { this.nom = value; }
+        }
+
+        public string Nom2 {
+            get; set;
+        }
+
+        Etudiant etu;
+
+        public static void Main(string[] args) {
+            Etudiant stu = new Etudiant();
+            stu.SayHi();
+
+            Console.WriteLine(stu);
+        }
+    }
+
 }
