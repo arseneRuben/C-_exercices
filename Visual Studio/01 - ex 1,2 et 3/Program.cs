@@ -42,7 +42,7 @@ namespace _01___ex_1_2_et_3 {
 
                 int somme = 0;
                 for (int i = 0; i < n; i++) {
-                    Console.Write("  Sasir le #{0} nombre : ", i+1);
+                    Console.Write("  Sasir le #{0} nombre : ", i + 1);
                     int v = int.Parse(Console.ReadLine());
                     somme += v;
                 }
@@ -51,14 +51,65 @@ namespace _01___ex_1_2_et_3 {
             }
         }
     }
+
+    interface ITest {
+
+    }
+
+    class Integer {
+        int n;
+
+        internal static Integer Parse(String s) {
+            return new Integer { n = int.Parse(s) };
+        }
+
+    }
+
+    class Personne {
+        public string Nom { get; set; }
+        public int Age { get; set; }
+
+        public static Personne Parse(String s) {
+            String[] tranches = s.Split(',');
+
+            String nom = tranches[0].Trim();
+            int age = int.Parse(tranches[1]);
+
+            return new Personne { Nom = nom, Age = age };
+        }
+
+        public override string ToString() {
+            return String.Format("{0} ({1} ans)", this.Nom, this.Age);
+        }
+    }
     class Program {
+        protected int MyProperty { private get; set; }
+
         static void Main(string[] args) {
             //question1.Question1.Q1();
             //question2.Question2.Q2();
-            question3.Question3.Q3();
+            //question3.Question3.Q3();
 
+
+            //new ITest() { };
+
+            //int n = int.Parse(Console.ReadLine());
+
+            //String s = Console.ReadLine();
+
+            Personne p = Personne.Parse(Console.ReadLine());
+            Console.WriteLine(p);
+
+            //Integer m = Integer.Parse(Console.ReadLine());
             Console.WriteLine("Appuyer sur une touche pour continuer");
             Console.ReadLine();
+
+            EventHandler evt = null;
+            evt = F;
+            evt = new EventHandler(F);
+            evt.Invoke(null, null);
         }
+
+        static void F(Object o, EventArgs args) { }
     }
 }
