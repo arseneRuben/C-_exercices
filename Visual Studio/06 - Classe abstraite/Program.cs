@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace _06___Classe_abstraite {
-    abstract class Employee {
+    public abstract class Employee {
         internal String name;
-        internal String address;
+        protected String address;
 
         public double AnnualSalary { get; set; }
 
@@ -19,7 +19,7 @@ namespace _06___Classe_abstraite {
         }
     }
 
-    class Teacher : Employee {
+    public class Teacher : Employee {
         internal override double GetMonthlySalary() {
             return this.AnnualSalary / 12;
         }
@@ -43,6 +43,8 @@ namespace _06___Classe_abstraite {
                 AnnualSalary = 120000
             };
 
+            new Teacher().address = "";
+
             Boss theBoss = new Boss {
                 name = "Paul",
                 address = "123456789, St Laurent",
@@ -57,6 +59,16 @@ namespace _06___Classe_abstraite {
     class Program {
         static void Main(string[] args) {
             EmployeeTest.Test();
+
+            // Employee emp = new Object();     //   NON!
+            Object emp1 = new Teacher(); //  upcast implicite
+            Object emp2 = (Object)new Teacher(); //  upcast explicite
+
+            //emp1 = new object();
+            //Teacher t = (Teacher)emp1;
+
+            Console.WriteLine(emp1 is Object);
+            Console.WriteLine(emp1 is Teacher);
         }
     }
 }
