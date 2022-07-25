@@ -24,7 +24,7 @@ namespace _11___exemple_ADO.NET {
 
 
     class Program {
-        const string connString = @"Data Source=2R1FJW2\SQLEXPRESS;
+        static readonly String connString = @"Data Source=" + Environment.MachineName + @"\SQLEXPRESS;
                                     Initial Catalog = School;
                                     Integrated Security=True;
                                     Connect Timeout=5";
@@ -200,6 +200,11 @@ namespace _11___exemple_ADO.NET {
 
 
         static void Main(string[] args) {
+            String machine = Environment.MachineName;
+            Console.WriteLine(@"Nom du serveur SQL {0}\SQLEXPRESS",machine);
+
+            Console.WriteLine(connString);
+
             //Program.Connection();
             //Program.Requete1();
             //Program.Requete2();
