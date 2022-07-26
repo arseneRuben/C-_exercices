@@ -3,6 +3,7 @@ using System.Collections;
 using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
 using System.Windows.Input;
 
 namespace _12___exemple_WPF {
@@ -12,7 +13,7 @@ namespace _12___exemple_WPF {
     public partial class MainWindow : Window {
         public MainWindow() {
             this.InitializeComponent();
-            this.Left = 1920 + 200;
+            this.Left = 0;// 1920 + 200;
             //this.Top = 200;
 
             this.monLabel.Visibility = Visibility.Hidden;
@@ -26,16 +27,25 @@ namespace _12___exemple_WPF {
                 Trace.WriteLine("Pas de selection dans le ComboBox");
             }
 
-            ArrayList al = new ArrayList() ;
-            al.Add(new Personne { Nom = "Jean", Age = 28, AutreDonnee = 32 });
-            al.Add(new Personne { Nom = "Arsene", Age = 22, AutreDonnee = 42 });
-            al.Add(new Personne { Nom = "Paul", Age = 19, AutreDonnee = 452 });
-            al.Add(new Personne { Nom = "Marc", Age = 36, AutreDonnee = 34 });
+            Personne[] al = new Personne[4] ;
+            al[0] = new Personne { Nom = "Jean", Age = 28, AutreDonnee = 32 };
+            al[1] = new Personne { Nom = "Arsene", Age = 22, AutreDonnee = 42 };
+            al[2] = new Personne { Nom = "Paul", Age = 19, AutreDonnee = 452 };
+            al[3] = new Personne { Nom = "Marc", Age = 36, AutreDonnee = 34 };
             this.dataGrid.ItemsSource = al;
+            this.dataGrid.MaxWidth = 300;
 
+            //this.dataGrid.
+            DataGridTextColumn col = new DataGridTextColumn();
+            col.Header = "YO!";
+            //col.Binding = new BindingBase();
+            //col.Binding.BindingGroupName = "Age";
+            this.dataGrid.Columns.Add(col);
         }
 
         private void ButtonHandler(object sender, RoutedEventArgs e) {
+            this.dataGrid.Columns[0].Visibility = Visibility.Hidden;
+
             Trace.WriteLine("Hello World!");
 
             this.monLabel.Content = "Hello World!";
