@@ -8,9 +8,9 @@
         Title="Mon super exemple!" Height="450" Width="800" Top="50">
     <Grid>
         <Button Content="Button" HorizontalAlignment="Left" Margin="421,67,0,0" VerticalAlignment="Top" Width="306" Height="74" Click="ButtonHandler" FontSize="48" Background="#FFD8B1B1" MouseEnter="ButtonMouseEnter"/>
-        <Label x:Name="monLabel" Content="Label" HorizontalAlignment="Left" Margin="436,223,0,0" VerticalAlignment="Top" Height="78" Width="291" FontSize="48" BorderThickness="0" FontStyle="Oblique" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" ToolTip="Un tooltip pour Dan :)"/>
+        <Label x:Name="monLabel" Content="Label" HorizontalAlignment="Left" Margin="421,223,0,0" VerticalAlignment="Top" Height="78" Width="306" FontSize="48" BorderThickness="0" FontStyle="Oblique" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" ToolTip="Un tooltip pour Dan :)"/>
         <ComboBox x:Name="monComboBox" HorizontalAlignment="Left" Margin="26,67,0,0" VerticalAlignment="Top" Width="354" Height="74" FontSize="48"/>
         <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="199" Margin="26,184,0,0" VerticalAlignment="Top" Width="354"/>
-
+        
     </Grid>
 </Window>
