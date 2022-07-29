@@ -64,5 +64,10 @@ namespace _12___exemple_WPF {
             DateTime? dt =  this.datePicker.SelectedDate;
             System.Console.WriteLine(dt);
         }
+
+        private void CellEdit(object sender, DataGridCellEditEndingEventArgs e) {
+            Console.WriteLine("COUCOU!");
+            
+        }
     }
 }
