@@ -5,12 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_12___exemple_WPF"
         mc:Ignorable="d"
-        Title="Mon super exemple!" Height="450" Width="800" Top="50">
+        Title="Mon super exemple!" Height="600" Width="800" Top="50">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="421,67,0,0" VerticalAlignment="Top" Width="306" Height="74" Click="ButtonHandler" FontSize="48" Background="#FFD8B1B1" MouseEnter="ButtonMouseEnter"/>
-        <Label x:Name="monLabel" Content="Label" HorizontalAlignment="Left" Margin="421,223,0,0" VerticalAlignment="Top" Height="78" Width="306" FontSize="48" BorderThickness="0" FontStyle="Oblique" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" ToolTip="Un tooltip pour Dan :)"/>
-        <ComboBox x:Name="monComboBox" HorizontalAlignment="Left" Margin="26,67,0,0" VerticalAlignment="Top" Width="354" Height="74" FontSize="48"/>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="199" Margin="26,184,0,0" VerticalAlignment="Top" Width="354"/>
-        
+        <Button Content="Button" HorizontalAlignment="Left" Margin="421,43,0,0" VerticalAlignment="Top" Width="306" Height="74" Click="ButtonHandler" FontSize="48" Background="#FFD8B1B1" MouseEnter="ButtonMouseEnter"/>
+        <Label x:Name="monLabel" HorizontalAlignment="Left" Margin="188,454,0,0" VerticalAlignment="Top" Height="78" Width="106" FontSize="48" BorderThickness="0" FontStyle="Oblique" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" ToolTip="Un tooltip pour Dan :)"/>
+        <ComboBox x:Name="monComboBox" HorizontalAlignment="Left" Margin="26,43,0,0" VerticalAlignment="Top" Width="268" Height="74" FontSize="48"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="199" Margin="26,184,0,0" VerticalAlignment="Top" Width="268"/>
+        <CheckBox x:Name="chkBox" Content="CheckBox" HorizontalAlignment="Left" Margin="26,419,0,0" VerticalAlignment="Top" Height="42" Width="182" IsThreeState="True"/>
+        <DatePicker x:Name="datePicker" HorizontalAlignment="Left" Margin="26,466,0,0" VerticalAlignment="Top" Height="66" Width="124"/>
+        <TextBlock HorizontalAlignment="Left" Margin="-21,595,0,-40" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Image Margin="307,184,67,110" Source="Capture.JPG" Stretch="Fill"/>
+
     </Grid>
 </Window>

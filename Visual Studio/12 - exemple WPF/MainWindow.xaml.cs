@@ -1,4 +1,5 @@
 ﻿using _12___modele_WPF;
+using System;
 using System.Collections;
 using System.Diagnostics;
 using System.Windows;
@@ -57,6 +58,11 @@ namespace _12___exemple_WPF {
 
         private void ButtonMouseEnter(object sender, MouseEventArgs e) {
             this.monLabel.Content = "Entree dans la zone du bouton...";
+
+            System.Console.WriteLine(this.chkBox.IsChecked);
+
+            DateTime? dt =  this.datePicker.SelectedDate;
+            System.Console.WriteLine(dt);
         }
     }
 }
